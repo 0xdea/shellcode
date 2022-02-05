@@ -26,4 +26,4 @@ TBD
 
 ## MIPS
 
-TBD
+* [**mips_n32_msb_linux_revsh.c**](https://github.com/0xdea/shellcode/blob/main/MIPS/mips_n32_msb_linux_revsh.c). Basic MIPS N32 MSB Linux reverse shellcode.
