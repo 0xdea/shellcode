@@ -2,7 +2,7 @@
  * sparc_solaris_chmod.c - Solaris/SPARC chmod() shellcode
  * Copyright (c) 2022 Marco Ivaldi <raptor@0xdeadbeef.info>
  *
- * Solaris/SPARC setuid/chmod shellcode.
+ * Solaris/SPARC setuid/chmod/exit shellcode.
  *
  * Tested on:
  * SunOS 5.10 Generic_Virtual sun4u sparc SUNW,SPARC-Enterprise
