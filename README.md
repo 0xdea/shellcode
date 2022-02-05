@@ -22,7 +22,9 @@
 
 ## SPARC
 
-TBD
+* [**sparc_solaris_exec.c**](https://github.com/0xdea/shellcode/blob/main/SPARC/sparc_solaris_exec.c). Solaris/SPARC setuid/execve shellcode (60 bytes).
+* [**sparc_solaris_chmod.c**](https://github.com/0xdea/shellcode/blob/main/SPARC/sparc_solaris_chmod.c). Solaris/SPARC setuid/chmod/exit shellcode (64 bytes).
+* [**sparc_solaris_chmod2.c**](https://github.com/0xdea/shellcode/blob/main/SPARC/sparc_solaris_chmod2.c). Very small Solaris/SPARC chmod shellcode (36 bytes).
 
 ## MIPS
 
