@@ -7,7 +7,7 @@
 
 > “A vulnerability provides an assembly language for a computer that has never been programmed before, and that was not designed with programmability in mind.” 
 > 
-> -- @halvarflake 
+> -- Halvar Flake
 
 ## x86
 
