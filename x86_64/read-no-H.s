@@ -6,7 +6,7 @@
 # prevent spoilers.
 #
 # Useful commands:
-# $ gcc -nostdlib -static read.s -o shellcode-elf
+# $ gcc -nostdlib -static shellcode.s -o shellcode-elf
 # $ objdump -M intel -d shellcode-elf
 # $ strace ./shellcode-elf
 # $ objcopy --dump-section .text=shellcode-raw shellcode-elf
