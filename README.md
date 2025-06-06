@@ -20,6 +20,10 @@
 * [**portbind-bsd.c**](https://github.com/0xdea/shellcode/blob/main/x86/portbind-bsd.c). Old setuid/portbind shellcode for BSD/x86 (94 bytes).
 * [**leetcode.c**](https://github.com/0xdea/shellcode/blob/main/x86/leetcode.c). Old setuid/execve shellcode for BSD/x86, with an ASCII message buried in the code.
 
+## x86_64
+
+* [**read-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-H.s). Simple Linux/x86_64 sendfile shellcode without 0x48 bytes.
+
 ## SPARC
 
 * [**sparc_solaris_exec.c**](https://github.com/0xdea/shellcode/blob/main/SPARC/sparc_solaris_exec.c). Solaris/SPARC setuid/execve shellcode (60 bytes).
