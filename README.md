@@ -24,6 +24,7 @@
 
 * [**read-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-H.s). Simple Linux/x86_64 sendfile shellcode without 0x48 bytes.
 * [**exec-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/exec-no-H.s). Tiny Linux/x86_64 exec shellcode without 0x48 bytes.
+* [**read-no-syscall.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-syscall.s). Simple Linux/x86_64 sendfile shellcode without 0x0f05 bytes.
 
 ## SPARC
 
