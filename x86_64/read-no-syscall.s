@@ -5,7 +5,7 @@
 # Simple shellcode inspired by a challenge that shall remain unnamed to 
 # prevent spoilers.
 #
-# TODO: remove NUL butes.
+# TODO: remove NUL bytes.
 #
 # Useful commands:
 # $ gcc -nostdlib -static shellcode.s -o shellcode-elf
