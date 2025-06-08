@@ -33,11 +33,11 @@ pop_buf:
     syscall
 
     # len = read(fd_in, buf, 1000)
-    mov rdi, rax		        # fd_in
-    mov rsi, r12		        # buf
+    mov rdi, rax                # fd_in
+    mov rsi, r12                # buf
     xor rdx, rdx
-    mov dx, 1000		        # 1000
-    xor rax, rax		        # read
+    mov dx, 1000                # 1000
+    xor rax, rax                # read
     syscall
 
     mov r13, rax                # save len
