@@ -5,6 +5,8 @@
 # Simple shellcode inspired by a challenge that shall remain unnamed to 
 # prevent spoilers.
 #
+# TODO: remove NUL butes.
+#
 # Useful commands:
 # $ gcc -nostdlib -static shellcode.s -o shellcode-elf
 # $ objdump -M intel -d shellcode-elf
