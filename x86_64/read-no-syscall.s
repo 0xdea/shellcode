@@ -37,8 +37,8 @@ pop_syscall_stub:
     mov [r12], cx
 
     xor rax, rax
-    mov al, 2
-    jmp r12             # open
+    mov al, 2           # open
+    jmp r12
 
 sendfile:
     # sendfile(1, fd, NULL, 1000)
@@ -55,8 +55,8 @@ sendfile:
     mov r10w, 1000      # 1000
 
     xor rax, rax
-    mov al, 40
-    jmp r12             # sendfile
+    mov al, 40          # sendfile
+    jmp r12
 
 get_syscall_stub:
     call pop_syscall_stub

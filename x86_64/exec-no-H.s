@@ -31,5 +31,5 @@ _start:
     pop rdx
     dec edx             # 0 (NULL)
 
-    mov al, 59
-    syscall             # execve
+    mov al, 59          # execve
+    syscall             

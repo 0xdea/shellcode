@@ -27,8 +27,8 @@ _start:
     pop rsi
     dec esi             # 0 (O_RDONLY)
 
-    mov al, 2
-    syscall             # open
+    mov al, 2           # open
+    syscall
 
     # sendfile(1, fd, NULL, 1000)
     push 1
@@ -43,9 +43,9 @@ _start:
 
     mov r10w, 1000      # 1000
 
-    mov al, 40
-    syscall             # sendfile
+    mov al, 40          # sendfile
+    syscall
 
     # exit(...)
-    mov al, 60
-    syscall             # exit
+    mov al, 60          # exit
+    syscall
