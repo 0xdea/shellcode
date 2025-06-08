@@ -2,8 +2,8 @@
 # read-no-syscall.s - Linux/x86_64 sendfile without 0x0f05
 # Copyright (c) 2025 Marco Ivaldi <raptor@0xdeadbeef.info>
 #
-# Simple shellcode inspired by a challenge that shall remain unnamed to 
-# prevent spoilers.
+# Shellcode inspired by a challenge that shall remain unnamed to prevent 
+# spoilers.
 #
 # Useful commands:
 # $ gcc -nostdlib -static shellcode.s -o shellcode-elf
