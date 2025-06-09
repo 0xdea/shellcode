@@ -22,10 +22,10 @@
 
 ## x86_64
 
-* [**read-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-H.s). Simple Linux/x86_64 sendfile shellcode without 0x48 bytes.
-* [**exec-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/exec-no-H.s). Tiny Linux/x86_64 exec shellcode without 0x48 bytes.
-* [**read-no-syscall.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-syscall.s). Simple Linux/x86_64 sendfile shellcode without 0x0f05 bytes.
-* [**read-write.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-write.s). Simple Linux/x86_64 file read/write shellcode.
+* [**read-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-H.s). Linux/x86_64 sendfile shellcode without 0x48 bytes.
+* [**exec-no-H.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/exec-no-H.s). Linux/x86_64 exec shellcode without 0x48 bytes.
+* [**read-no-syscall.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-no-syscall.s). Linux/x86_64 sendfile shellcode without 0x0f05 bytes.
+* [**read-write.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/read-write.s). Linux/x86_64 file read/write shellcode.
 * [**chmod-tiny.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/chmod-tiny.s). 12-bytes Linux/x86_64 chmod 4 shellcode.
 * [**exec-tiny.s**](https://github.com/0xdea/shellcode/blob/main/x86_64/exec-tiny.s). 12-bytes Linux/x86_64 exec shellcode.
 
