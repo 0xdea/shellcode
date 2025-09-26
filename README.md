@@ -9,6 +9,11 @@
 > 
 > -- Halvar Flake
 
+A collection of new and old shellcode samples.
+
+Blog post:  
+https://hnsecurity.it/blog/new-and-old-shellcode-samples/
+
 ## x86
 
 * [**setuid-linux.c**](https://github.com/0xdea/shellcode/blob/main/x86/setuid-linux.c). Old setuid/execve shellcode for Linux/x86 (30 bytes).
