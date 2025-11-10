@@ -12,6 +12,8 @@
 
 A collection of new and old shellcode samples.
 
+![](https://raw.githubusercontent.com/0xdea/shellcode/main/.img/dirty.jpg)
+
 ## Blog post
 
 * <https://hnsecurity.it/blog/new-and-old-shellcode-samples/>
